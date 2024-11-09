@@ -14,29 +14,29 @@ types_count = {str, int, bool, set, list, tuple, float}
 lst_count_types = [count_set, count_float, count_tuple, count_list, count_bool, count_str, count_int]
 lst_name_type = ['set', 'float', 'tuple', 'list', 'bool', str, int]
 lst = [name, surname, age]
-for item in lst:
-    if type(item) == int:
+for iteml in lst:
+    if type(iteml) == int:
         lst_count_types[-1] += 1
-    elif type(item) == str:
+    elif type(iteml) == str:
         lst_count_types[-2] += 1
 
-for item in lst_count_types:
-    if item != 0:
-        lst_notnull.append(item)
+for itemc in lst_count_types:
+    if itemc != 0:
+        lst_notnull.append(itemc)
     if len(lst_notnull) == 0:
         print('Good')
     else:
-        if item == max_value:
+        if itemc == max_value:
             print('Not')
             break
 
-        elif item > max_value:
-            max_value = item
+        elif itemc > max_value:
+            max_value = itemc
 
 inn = lst_count_types.index(max_value)
 
 print(lst_name_type[inn])
 
-for item in lst:
-    if type(item) != lst_name_type[inn]:
-        lst.remove(item)
+for iteml in lst:
+    if type(iteml) != lst_name_type[inn]:
+        lst.remove(iteml)
