@@ -6,7 +6,7 @@ def def_lst_unique(lst):
     lst_in_set = set()  # Використовується для перевірки на унікальність
     for item in lst:
         item = item.lower() if type(item) == str else item  # Рядки переводимо в малий регістр
-        if item not in lst_in_set:  # Якщо значення ще не було
+        if item not in lst_in_set:  #Чи Немає item в lst_in_set
             lst_unique.append(item)  # Додаємо його до результату
             lst_in_set.add(item)  # Помічаємо як оброблене
     return lst_unique
