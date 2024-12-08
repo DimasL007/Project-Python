@@ -25,8 +25,8 @@ for iteml in lst:
 # Перебір лічильників
 for itemc in lst_count_types:
     if itemc != 0:
-        lst_notnull.append(itemc)  # ненульові значення до lst_notnull
-    if len(lst_notnull) == 0:  # Якщо у списку немає ненульових значень
+        lst_notnull.append(itemc)  # додаються ненульові значення до lst_notnull
+    if len(lst_notnull) == 0:  # Якщо Список Пустий
         print('Good')
     else:
         if itemc == max_value: 
